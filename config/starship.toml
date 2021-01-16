@@ -1,0 +1,69 @@
+# starships rs config
+
+add_newline = false
+
+[character]
+disabled = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](white bold) "
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "while bold"
+format = "\\[[$user]($style)@"
+disabled = false
+show_always = true
+
+[directory]
+truncation_length = 1
+format = "[$path]($style)[$read_only]($read_only_style)\\] \\$ "
+
+[aws]
+disabled = true
+
+[cmake]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[dart]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[erlang]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[golang]
+disabled = true
+
+[helm]
+disabled = true
+
+[java]
+disabled = true
+
+

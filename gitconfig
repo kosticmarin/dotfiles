@@ -1,0 +1,19 @@
+[user]
+	name = Marin Koštić
+	email = kosticmarin@gmail.com
+
+[alias]
+	a = add
+	b = branch
+	c = commit
+	d = diff
+	co = checkout
+	s = status
+	l = log --graph --decorate
+	g = log --graph --decorate --oneline --all
+
+[push]
+	default = current
+
+[core]
+	editor = vim
