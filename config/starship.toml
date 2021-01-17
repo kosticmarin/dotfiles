@@ -66,4 +66,6 @@ disabled = true
 [java]
 disabled = true
 
-
+[python]
+symbol = ""
+disabled = false
