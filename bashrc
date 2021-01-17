@@ -13,3 +13,7 @@ source "$HOME/.cargo/env"
 
 # starships rs
 eval "$(starship init bash)"
+
+# pyenv and virtualenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
