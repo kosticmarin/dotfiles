@@ -9,8 +9,6 @@
 (set-face-attribute 'default nil :height 160)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(load-theme 'wombat)
-
 (require 'package)
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
 			 ("org" . "https://orgmode.org/elpa/")
@@ -26,6 +24,24 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(column-number-mode)
+(global-display-line-numbers-mode t)
+(dolist (mode '(org-mode-hook
+		term-mode-hook
+		eshell-mode-hook
+		shell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+(use-package all-the-icons)
+
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
+
+(use-package doom-themes
+  :config
+  (load-theme 'doom-dark+ t))
+
 (use-package diminish)
 
 (use-package ivy
@@ -33,8 +49,3 @@
   :config
   (ivy-mode 1))
 
-(use-package all-the-icons)
-
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1))
