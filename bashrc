@@ -17,3 +17,9 @@ eval "$(starship init bash)"
 # pyenv and virtualenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# fd
+FD_OPTIONS="--follow --exclude .git"
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
