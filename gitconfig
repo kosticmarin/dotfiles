@@ -9,7 +9,7 @@
 	d = diff
 	co = checkout
 	s = status
-	l = log --graph --decorate
+	l = log --oneline
 	g = log --graph --decorate --oneline --all
 
 [push]
